@@ -1,0 +1,31 @@
+# 顶部的EditorConfig文件
+root = true
+
+# unix风格的换行符，每个文件都以换行符结尾
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# 用大括号展开符号匹配多个文件
+# 设置默认字符集
+# 设置所有以.js,.py结尾的文件的编码格式
+[*.{js,py}]
+charset = utf-8
+
+# 使用空格缩进，设置4个空格缩进
+[*.py]
+indent_style = space
+indent_size = 4
+
+# 使用制表符(tab)缩进
+[Makefile]
+indent_style = tab
+
+# 设置lib目录下的所有JS的缩进风格(使用空格缩进，缩进占用两个空格的位置)
+[lib/**.js]
+indent_style = space
+indent_size = 2
+# 匹配确切文件 package.json或.travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2

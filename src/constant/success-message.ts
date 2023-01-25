@@ -1,0 +1,3 @@
+const CREATE_SUCCESS = '创建成功';
+const UPDATE_STATUS_SUCCESS = '修改状态成功';
+export { CREATE_SUCCESS, UPDATE_STATUS_SUCCESS };
